@@ -22,6 +22,12 @@ body{
     align-items: center;
 }
 
+@media (max-width: 550px) {
+    .wrapper{
+        background: url("images/pattern-background-mobile.svg") hsl(225, 100%, 98%); 
+    }
+}
+
 .main-card{
     background-color: white;
     border-radius: 0.5em;

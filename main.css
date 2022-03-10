@@ -1,0 +1,150 @@
+body{
+    height: 100vh;
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+    /* font-family: 'Red Hat Display' */
+}
+
+:root{
+    --g-color: hsl(224, 23%, 55%);
+    --b-color: hsl(223, 47%, 23%);
+}
+
+.wrapper{
+    background: url("images/pattern-background-desktop.svg") 0% 0% / contain
+        no-repeat,  hsl(225, 100%, 94%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-card{
+    background-color: white;
+    border-radius: 0.5em;
+    min-width: 450px;
+    /* max-width: 450px; */
+    height: 80vh;
+    border-radius: 2rem;
+    /* padding: 1rem; */
+}
+
+@media (max-width: 550px) {
+    .main-card{
+        min-width: 80%;
+    }
+}
+
+.card-image{
+    min-height: 29vh;
+    background-color: aqua;
+    background: url('./images/illustration-hero.svg');
+    border-radius: 2rem 2rem 0 0;
+}
+
+.text-container{
+    /* border: 1px solid black; */
+    text-align: center;
+    margin: 0 5rem;
+}
+
+.text-container>h1{
+    color: var(--b-color);
+}
+
+.text-container>p{
+    color: var(--g-color);
+    line-height: 10px;
+}
+
+.main-container{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem;
+    padding: 1rem 2rem;
+    background-color: hsl(225, 100%, 98%);
+    align-items: center;
+    border-radius: 15px;
+}
+
+.sub-container{
+    /* border: 1px solid black; */
+    max-width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+}
+
+.sub-container>img{
+    object-fit: contain;
+}
+
+.price-container{
+    /* border: 1px solid black; */
+    /* display: block; */
+    line-height: 2px;
+    max-width: max-content;
+}
+
+.price-container>h4{
+    color: var(--b-color);
+}
+
+.price-container>p{
+    color: var(--g-color);
+}
+
+/* .proceed-btn{
+    border: 3px solid black;
+    margin: 1.5rem 2rem;
+    padding: 0rem 8rem;
+}
+
+.proceed-btn>button{
+} */
+
+.change>a{
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+}
+
+.change>a:hover{
+    color: hsl(245, 75%, 70%);
+}
+
+.proceed-a{
+    font-size: 1.3rem;
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 0.9rem;
+    width: 80%;
+    padding: 0.5rem 0 0.5rem 0;
+    border-radius: 1.1rem;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0 2rem 2rem 0 rgb(56 42 225 / 19%);
+    background-color: hsl(245, 75%, 52%);
+    text-align: center;
+}
+
+.proceed-a:hover{
+    background-color: hsl(245, 75%, 70%);
+}
+
+.card-cancel{
+    color: var(--g-color);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.card-cancel:hover{
+    color: var(--b-color);
+    transition: all 0.3s ease-out;
+}
